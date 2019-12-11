@@ -4,18 +4,19 @@ import Galaxy from "../models/Galaxy";
 const _repository = mongoose.model("Galaxy", Galaxy);
 
 class GalaxyService {
-  delete() {
-    throw new Error("Method not implemented.");
+  delete(id) {
+    ;
   }
-  update() {
-    throw new Error("Method not implemented.");
+  update(id, body) {
+    ;
   }
-  create() {
-    throw new Error("Method not implemented.");
+  create(body) {
+    ;
   }
-  getById() {
-    throw new Error("Method not implemented.");
+  getById(id) {
+    ;
   }
+
   async getAll() {
     return await _repository.find({});
   }
