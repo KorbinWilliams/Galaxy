@@ -4,8 +4,7 @@ const Schema = mongoose.Schema;
 const Moon = new Schema(
   {
     name: { type: String, required: true, minlength: 2 },
-    size: { type: Number, required: true, min: 10000 },
-    // TODO how to tack on unit of measuremeant (in light years)
+    size: { type: String, required: true, minlength: 5 },
     description: { type: String, required: true },
     orbitalPeriod: { type: Number },
     imgUrl: [{ type: String }]

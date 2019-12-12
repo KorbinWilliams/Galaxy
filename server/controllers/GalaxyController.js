@@ -51,7 +51,7 @@ export default class GalaxyController {
   async delete(res, req, next) {
     try {
       await galaxyService.delete(req.params.id)
-      return res.send("It's dead")
+      return res.send("It's dead, You murderer")
     } catch (error) {
       next(error)
     }

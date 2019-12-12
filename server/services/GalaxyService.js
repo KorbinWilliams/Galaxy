@@ -9,8 +9,7 @@ class GalaxyService {
     return await _repository.find({});
   }
   async create(body) {
-    let data = await _repository.create(body);
-    return data
+    return await _repository.create(body);
   }
   async delete(id) {
     let data = _repository.findOneAndDelete(id);
